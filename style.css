@@ -1,0 +1,47 @@
+/* Styl bazowy */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  /* Tryb ciemny */
+  body.darkmode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  body.darkmode header {
+    background-color: #333;
+    color: #e0e0e0;
+  }
+  
+  body.darkmode footer {
+    background-color: #2e2e2e;
+    color: #ccc;
+  }
+  
+  body.darkmode .karta-gry {
+    background-color: #2a2a2a;
+    color: #ddd;
+  }
+  
+  body.darkmode .karta-gry:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  body.darkmode .przycisk-play {
+    background: #444;
+  }
+  
+  body.darkmode .przycisk-play:hover {
+    background: #00c853;
+  }
+  

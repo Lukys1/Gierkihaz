@@ -1,0 +1,33 @@
+body.darkmode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  body.darkmode header {
+    background-color: #333;
+    color: #e0e0e0;
+  }
+  
+  body.darkmode .karta-gry {
+    background-color: #2a2a2a;
+    color: #ddd;
+  }
+  
+  body.darkmode .przycisk-play {
+    background: #444;
+  }
+  
+  body.darkmode .karta-gry:hover .przycisk-play {
+    background: #00c853;
+  }
+  
+  body.darkmode footer {
+    background-color: #2e2e2e;
+    color: #ccc;
+  }
+  
+  body.darkmode .tytul-gry,
+  body.darkmode .opis-gry {
+    color: #ffffff;
+  }
+  
