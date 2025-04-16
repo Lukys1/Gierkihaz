@@ -6,9 +6,27 @@ if (document.cookie.split("; ").find((row) => row.startsWith("chips="))?.split("
 }
 
 function updateUserInfo() {
-  document.getElementById('user-name').innerText = document.cookie.split("; ").find((row) => row.startsWith("username="))?.split("=")[1];
+  const username = document.cookie.split("; ").find((row) => row.startsWith("username="))?.split("=")[1];
+  document.getElementById('user-name').innerText = username;
+
+  if (username === 'gieras') {
+    document.getElementById('user-icon').src = 'assets/img/gieraspfp.png';
+  }
+  if (username === 'pitulec') {
+    document.getElementById('user-icon').src = 'assets/img/pitulec.jpeg';
+  }
+  if (username === 'mina'||username==='drill') {
+    document.getElementById('user-icon').src = 'assets/img/mina.jpeg';
+  }
+  
+
+  
+
   document.getElementById('token_count').innerText = document.cookie.split("; ").find((row) => row.startsWith("chips="))?.split("=")[1];
+
+  
 }
+
 
 function redirectToHome() {
   window.location.href = 'index.html';
@@ -31,6 +49,7 @@ function editUserName() {
       userNameSpan.style.display = 'block';
       editNameTextarea.style.display = 'none';
       document.cookie = "username=" + editNameTextarea.value + "; SameSite=None; secure; expires=Fri, 20 Aug 2077 12:00:00 UTC; path=/";
+      window.location.reload();
     }
   });
 }
@@ -47,6 +66,11 @@ function toggleDarkMode() {
   const isDark = document.body.classList.toggle("darkmode");
   document.getElementById('darkmode-toggle').innerText = isDark ? '☀️' : '🌙';
   document.cookie = "darkmode=" + (isDark ? "on" : "off") + "; SameSite=None; secure; expires=Fri, 20 Aug 2077 12:00:00 UTC; path=/";
+
+  if (document.getElementById('token_count').innerText = document.cookie.split("; ").find((row) => row.startsWith("chips="))?.split("=")[1] === 69){
+    toggleDarkMode();
+  }
+
 }
 
 (function checkDarkModeOnLoad() {
