@@ -183,3 +183,31 @@ footer {
   text-align: center;
   font-size: 0.95em;
 }
+
+
+
+.pinkmode {
+  background-color: rgb(248, 169, 182);
+  color: rgb(0, 0, 0) ;
+}
+ 
+.pinkmode #darkmode-toggle {
+  background-color: hotpink;
+  color: white;
+}
+ 
+.pinkmode a, .pinkmode button {
+  background-color: deeppink;
+  border-color: deeppink;
+  color: white;
+}
+
+body.pinkmode footer {
+  background-color: #df59b2;
+  color: #ccc;
+}
+
+body.pinkmode header {
+  background-color: #df59b2;
+  color: #e0e0e0;
+}

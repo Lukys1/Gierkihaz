@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/img/icon.png" type="image/png">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="darkmode.css">
   <script src="pliki-cookies.js"></script>
   <title>Gierki hazardowe</title>
 </head>
@@ -21,15 +21,18 @@
     <div id="token-display" onclick="resetTokens()">
       Żetony: <span id="token_count">Ładowanie...</span>
     </div>
+    
+    
 
     <div id="userinfo">
-      <img id="user-icon" src="assets/img/user.png" alt="User Icon" style="height: 2.5em; width: auto; margin-right: 0.5em;">
-      <span id="user-name" style="font-size: 1.5em; font-weight: bold; color: #333; cursor: pointer;" onclick="editUserName()">nazwa użytkownika</span>
+      <img id="user-icon" src="assets/img/user.png" alt="User Icon" style="height: 2.5em; width: auto; margin-right: 0.5em; border-radius: 50%; width: 50px; height: 50px;">
+      <span id="user-name" onclick="editUserName()">nazwa użytkownika</span>
       <textarea id="edit-name"
         style="display: none; font-size: 1.5em; padding: 0.2em; border: 1px solid #ccc; border-radius: 4px; resize: none;"></textarea>
     </div>
+    
 
-    <div id="darkmode-toggle" onclick="toggleDarkMode()" title="Przełącz tryb">🌙</div>
+    <div id="darkmode-toggle" onclick="toggleDarkMode()" title="Przełącz tryb">🌙</div> 
   </header>
 
   <div style="display: flex; justify-content: center; align-items: center;">
@@ -47,6 +50,7 @@
         </div>
       </a>
       `);
+      
       }
 
       addGame("ruletka", "wheel.png", "Ruletka", "Postaw na numery, kolory lub sekcje<br>i zakręć by wygrać!");

@@ -2,7 +2,7 @@ header {
    top: 0;
    left: 0;
    width: 100%;
-   background-color: #e0e0e0;  
+   background-color: #ccc;  
    text-align: left;
    display: flex;
    align-items: center;
@@ -86,6 +86,8 @@ header, #userinfo, #kolor-header-menu, #token-display {
  
  #darkmode-toggle {
    transition: color 0.3s ease;
+   position: absolute;
+   right: 250pt;
  }
  
 body.darkmode header,
@@ -94,5 +96,5 @@ body.darkmode #userinfo,
 body.darkmode #userinfo span,
 body.darkmode #token-display,
 body.darkmode #kolor-header-menu {
-  color: #ffffff;
+  color: #ccc;
 }
